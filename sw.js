@@ -1,9 +1,12 @@
-/* LiftLog Service Worker：讓 App 在沒有網路時也能開啟（健身房地下室常常沒訊號） */
-const VERSION = 'liftlog-v2';
+/* LiftLog Service Worker：讓 App 在沒有網路時也能開啟（健身房地下室常常沒訊號）
+ * 動作示範圖第一次看過後就會存進快取，之後離線也看得到。 */
+const VERSION = 'liftlog-v3';
 const SHELL = [
   './',
   './index.html',
   './manifest.webmanifest',
+  './app.js',
+  './exercises.js',
   './vendor/chart.umd.min.js',
   './icons/apple-touch-icon.png',
   './icons/icon-192.png',
